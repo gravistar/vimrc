@@ -1,8 +1,9 @@
 " Pathogen
 call pathogen#infect()
 
-" Line numbers
+" Line numbers and character counts
 set number
+set ruler
 
 " Syntax highlighting
 syntax on
@@ -29,14 +30,14 @@ au BufRead,BufNewFile *.coffee,*.js,*.less,*.css setl tabstop=2 shiftwidth=2 exp
 
 " Number of spaces that a pre-existing tab is equal to.
 " For the amount of space used for a new tab use shiftwidth.
-au BufRead,BufNewFile *.py,*.pyw,*.c,*.cc,*.cpp,*.h set tabstop=4
+au BufRead,BufNewFile *.txt,*.py,*.pyw,*.c,*.cc,*.cpp,*.h set tabstop=4
 
 " What to use for an indent.
 " This will affect Ctrl-T and 'autoindent'.
 " Python: 4 spaces
 " C: tabs (pre-existing files) or 4 spaces (new files)
-au BufRead,BufNewFile *.py,*pyw set shiftwidth=4
-au BufRead,BufNewFile *.py,*.pyw set expandtab
+au BufRead,BufNewFile *.txt,*.py,*pyw set shiftwidth=4
+au BufRead,BufNewFile *.txt,*.py,*.pyw set expandtab
 fu Select_c_style()
     if search('^\t', 'n', 150)
         set shiftwidth=4
@@ -60,7 +61,7 @@ au BufRead,BufNewFile *.py,*.pyw,*.c,*.cc,*.cpp,*.h match BadWhitespace /\s\+$/
 " Wrap text after a certain number of characters
 " Python: 79 
 " C: 79
-au BufRead,BufNewFile *.coffee,*.js,*.py,*.pyw,*.c,*.cc,*.cpp,*.h set textwidth=79
+au BufRead,BufNewFile *.txt,*.coffee,*.js,*.py,*.pyw,*.c,*.cc,*.cpp,*.h set textwidth=79
 
 " Turn off settings in 'formatoptions' relating to comment formatting.
 " - c : do not automatically insert the comment leader when wrapping based on
@@ -76,5 +77,5 @@ au BufRead,BufNewFile *.c,*.cc,*.cpp,*.h set formatoptions-=c formatoptions-=o f
 " line endings.
 " Python: yes
 " C: yes
-au BufNewFile *.coffee,*.js,*.py,*.pyw,*.c,*.cc,*.cpp,*.h set fileformat=unix
+au BufNewFile *.txt,*.coffee,*.js,*.py,*.pyw,*.c,*.cc,*.cpp,*.h set fileformat=unix
 
