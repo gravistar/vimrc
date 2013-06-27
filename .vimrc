@@ -8,15 +8,15 @@ call pathogen#infect()
 filetype indent on
 
 " c/c++
-"au FileType h,c,cc,cpp so ~/.vim/myformat/cpp.vim
+"au FileType h,c,cc,cpp so ~/.vim/myformat/cpp.vim 
 
 " python
-"au FileType py so ~/.vim/myformat/python.vim
+"au FileType py so ~/.vim/myformat/python.vim 
 
 " js/coffee
 "au FileType js,coffee so ~/.vim/myformat/javascript.vim
 
-" java
+" java 
 "au FileType java so ~/.vim/myformat/java.vim
 
 " makefile
@@ -35,12 +35,12 @@ set number		" line numbers
 set ruler		" character count
 set hlsearch		" highlight search results
 set showtabline=2	" always show tabline
-set textwidth=79	" <80 chars per line
-set fileformat=unix	" unix newlines
+set textwidth=79	" <80 chars per line 
+set fileformat=unix	" unix newlines 
 match BadWhitespace /\s\+$/ " highlight trailing whitespace
 
 """ Variable options
 let c_syntax_for_h=1	" c for header
 
 """ Custom commands
-command Nt NERDTreeToggle
+command Nt NERDTreeToggle 
