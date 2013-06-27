@@ -33,3 +33,6 @@ let c_syntax_for_h=1	" c for header
 
 """ Custom commands
 command Nt NERDTreeToggle
+
+""" For YCM
+let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py'
