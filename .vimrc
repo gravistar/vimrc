@@ -19,13 +19,13 @@ set expandtab		" expand tabs to spaces
 set shiftwidth=4	" default to 4
 
 """ Appearance options
-syntax on		" syntax highlighting
-set relativenumber	" relative line numbers
-set ruler		" character count
-set hlsearch		" highlight search results
-set showtabline=2	" always show tabline
-set textwidth=79	" <80 chars per line
-set fileformat=unix	" unix newlines
+syntax on                   " syntax highlighting
+set relativenumber          " relative line numbers
+set ruler                   " character count
+set hlsearch                " highlight search results
+set showtabline=2           " always show tabline
+set textwidth=79            " <80 chars per line
+set fileformat=unix         " unix newlines
 match BadWhitespace /\s\+$/ " highlight trailing whitespace
 
 """ Variable options
