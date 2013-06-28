@@ -35,7 +35,7 @@ let c_syntax_for_h=1	" c for header
 command Nt NERDTreeToggle
 
 """ Complete options
-set completeopt = menu,menuone,longest
+set completeopt=menuone
 
 """ For YCM
-let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py'
+let g:ycm_global_ycm_extra_conf='~/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py'
