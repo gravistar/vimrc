@@ -20,7 +20,7 @@ set shiftwidth=4	" default to 4
 
 """ Appearance options
 syntax on                   " syntax highlighting
-set relativenumber          " relative line numbers
+set number                  " relative line numbers
 set ruler                   " character count
 set hlsearch                " highlight search results
 set showtabline=2           " always show tabline
