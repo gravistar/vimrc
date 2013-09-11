@@ -41,5 +41,8 @@ set completeopt=menuone
 """ For NERDTree
 let NERDTreeShowHidden=1    " shows hidden files
 
-""" For YCM
-let g:ycm_global_ycm_extra_conf='~/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py'
+""" For syntastic
+let g:syntastic_cpp_compiler_options = '-std=c++11 -libstd=libc++'
+
+""" For clang_complete
+let g:clang_user_options = '-std=c++11 -stdlib=libc++' 

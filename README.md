@@ -5,8 +5,15 @@ My vim configuration uses the following plugins:
 
 - Pathogen
 - NERDTree
-- YouCompleteMe (ycm)
+- clang_complete 
 - syntastic
+
+Some installation notes:
+- Since clang_complete is vimball, I used
+  http://geek.chrislott.org/2012/using-a-vimball-with-pathogen/
+- Since I want c++11 support all around, global flags needed to be added in
+  .vimrc for clang_complete and syntastic. libstd=libc++ flag needed to be
+  added too.
 
 I have indent files for the following languages:
 
