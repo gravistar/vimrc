@@ -15,6 +15,9 @@ Some installation notes:
   .vimrc for clang_complete and syntastic. libstd=libc++ flag needed to be
   added too.
 
+Here's a useful reference:
+http://stackoverflow.com/questions/4237817/help-with-configuring-vim-for-c
+
 I have indent files for the following languages:
 
 - c
