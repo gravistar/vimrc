@@ -55,3 +55,10 @@ tmux
 
 vim
 ---
+Navigation
+    - gd              : go to local variable definition
+    - gD              : go to global variable definition 
+
+CTags
+    - :tag <tag name> : go to ctag specified by <tag name>
+    - :pop            : go to previous ctag in stack
