@@ -46,3 +46,10 @@ let g:syntastic_cpp_compiler_options = '-std=c++11 -libstd=libc++'
 
 """ For clang_complete
 let g:clang_user_options = '-std=c++11 -stdlib=libc++' 
+
+""" Testing ctags
+set tags=tags;/
+
+""" Testing nav
+map <C-j> <C-W>h
+map <C-k> <C-W>l
